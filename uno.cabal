@@ -13,6 +13,8 @@ library
   build-depends:
       base
     , ansi-terminal
+    , random
+    , random-shuffle
   exposed-modules:
       UnoI
       Common
@@ -30,6 +32,8 @@ executable uno
   build-depends:
       base
     , ansi-terminal
+    , random
+    , random-shuffle
     , uno
     , hpack
   other-modules:
@@ -47,6 +51,8 @@ test-suite test
   build-depends:
       base
     , ansi-terminal
+    , random
+    , random-shuffle
     , uno
     , hspec
   default-language: Haskell2010
